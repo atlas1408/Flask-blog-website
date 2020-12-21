@@ -1,0 +1,112 @@
+2020-12-19 18:20:29,083 ERROR: Exception on /user/Akshay [GET] [in /home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/app/routes.py", line 66, in user
+    return render_template('user.html', user=user, form = form)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/app/templates/user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/app/templates/base.html", line 35, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/app/templates/user.html", line 6, in block "content"
+    <td><img src="{{ user.avatar(128) }}" alt=""></td>
+jinja2.exceptions.UndefinedError: 'function object' has no attribute 'avatar'
+2020-12-19 18:24:24,792 INFO: Microblog startup [in /home/akshay/Documents/flask-projects/microblog/micro-venv/app/__init__.py:38]
+2020-12-19 18:24:58,051 ERROR: Exception on /user/david [GET] [in /home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/app/routes.py", line 71, in user
+    return render_template('user.html', user=user, form = form)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/app/templates/user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/app/templates/base.html", line 35, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/app/templates/user.html", line 23, in block "content"
+    <form action="{{ url_for('unfollow',user.username) }}" method='post'>
+TypeError: url_for() takes 1 positional argument but 2 were given
+2020-12-19 18:25:37,485 INFO: Microblog startup [in /home/akshay/Documents/flask-projects/microblog/micro-venv/app/__init__.py:38]
+2020-12-19 19:05:33,675 INFO: Microblog startup [in /home/akshay/Documents/flask-projects/microblog/micro-venv/app/__init__.py:38]
+2020-12-19 19:05:51,342 ERROR: Exception on /explore [GET] [in /home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/app/routes.py", line 138, in explore
+    post = Post.query.order_by(Post.timestamp.desc()),all()
+NameError: name 'Post' is not defined
+2020-12-19 19:06:31,801 INFO: Microblog startup [in /home/akshay/Documents/flask-projects/microblog/micro-venv/app/__init__.py:38]
+2020-12-19 19:06:33,067 ERROR: Exception on /explore [GET] [in /home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/akshay/Documents/flask-projects/microblog/micro-venv/app/routes.py", line 138, in explore
+    post = Post.query.order_by(Post.timestamp.desc()).all()
+NameError: name 'Post' is not defined
